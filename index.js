@@ -1,9 +1,7 @@
 var checkboxs = new Vue({
     el: '#checkboxs',
-    data () {
-      return {
-        info: null
-      }
+    data: {
+        datalists:[],
     },
     mounted () {
         axios
@@ -12,10 +10,15 @@ var checkboxs = new Vue({
                 "Content-Type": "application/json",
                 "X-API-KEY": "NNdLp1xdZ5PtMo0DwVYkZqUYHAHH7meoecAtqi6X"
             },
-           data: {}
+            data: {},
        })
-       .then(response => (this.info = response));
-    }
+            .then(response => {
+                this.datalists = response.data.result;
+            })
+            .catch(error => {
+                console.log(error);
+            });
+    },
   })
 
 

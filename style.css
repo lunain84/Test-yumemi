@@ -17,8 +17,7 @@ header{
     text-align: center;
     color: aliceblue;
 }
-#heading p{
-    font-family: 'Noto Sans JP', sans-serif;
+#heading > p{
     font-size: 30px;
     text-align: center;
     margin: 1px;
@@ -26,6 +25,15 @@ header{
 #heading{
     width: 130px;
     border: solid black;
-    margin: 30px;
+    
     border-radius: 20px;
+}
+
+#checkboxs > div > label{
+    padding-right: 10px;
+    font-size: 20px;
+}
+main{
+    font-family: 'Noto Sans JP', sans-serif;
+    margin: 30px;
 }
