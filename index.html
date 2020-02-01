@@ -1,1 +1,33 @@
-<h1>hello world</h1>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Trends in total population by prefecture</title>
+</head>
+<body>
+    <header>
+        <div id="header-tittle">
+            Trends in total population by prefecture
+        </div>
+    </header>
+    <main>
+        <div id="prefectures">
+            <div id="heading">
+                <p>都道府県</p>
+            </div>
+            <div id="checkboxs">
+                {{ info }}
+            </div>
+            <script src="index.js"></script>
+        </div>
+        <div id="grouph">
+
+        </div>
+    </main>
+</body>
+</html>
