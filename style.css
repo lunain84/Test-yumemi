@@ -29,11 +29,12 @@ header{
     border-radius: 20px;
 }
 
-#checkboxs > div > label{
-    padding-right: 10px;
-    font-size: 20px;
-}
 main{
     font-family: 'Noto Sans JP', sans-serif;
     margin: 30px;
+}
+#elems{
+    font-size: 20px;
+    padding-left: 20px;
+    display: inline-block;
 }

@@ -24,9 +24,18 @@
                 <p>総人口推移グラフを表示したい県を選択してください。複数選択可能です。</p>
             </div>
             <div id="checkboxs">
-                <div><label v-for="data in datalists"><input type="checkbox" name="pref">{{data.prefName}}</label></div>
+                <section>
+                    <div v-for="(pref, i) in datalists" :key="i" id="elems">
+                        <input 
+                            type="checkbox"
+                            :id="'pref' + i"
+                            :value="pref"
+                            v-model="selectedPref"
+                        >
+                        <label :for="'pref' + i">{{pref.prefName}}</label>
+                    </div>
+                </section>
             </div>
-           
             <script src="index.js"></script>
         </div>
         <div id="grouph">

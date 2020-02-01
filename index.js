@@ -1,7 +1,8 @@
 var checkboxs = new Vue({
     el: '#checkboxs',
     data: {
-        datalists:[],
+        datalists: [],
+        selectedPref:[],
     },
     mounted () {
         axios
