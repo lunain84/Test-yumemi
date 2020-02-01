@@ -17,15 +17,14 @@ header{
     text-align: center;
     color: aliceblue;
 }
-#heading > p{
+.heading > p{
     font-size: 30px;
     text-align: center;
     margin: 1px;
 }
-#heading{
-    width: 130px;
+.heading{
+    display: inline-block;
     border: solid black;
-    
     border-radius: 20px;
 }
 
@@ -37,4 +36,8 @@ main{
     font-size: 20px;
     padding-left: 20px;
     display: inline-block;
+}
+
+#prefectures{
+    padding-bottom: 40px;
 }

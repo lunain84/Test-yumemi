@@ -17,11 +17,11 @@
     </header>
     <main>
         <div id="prefectures">
-            <div id="heading">
+            <div class="heading">
                 <p>都道府県</p>
             </div>
             <div class="intro">
-                <p>総人口推移グラフを表示したい県を選択してください。複数選択可能です。</p>
+                <p>総人口推移グラフを表示したい県を選択してください。複数選択可能です。APIの使用上、11 個までしか選択できません。</p>
             </div>
             <div id="checkboxs">
                 <section>
@@ -36,11 +36,19 @@
                     </div>
                 </section>
             </div>
-            <script src="index.js"></script>
         </div>
         <div id="grouph">
-
+            <div class="heading">
+                <p>都道府県別総人口推移</p>
+            </div>
+            <div class="intro">
+                <p>選択された都道府県の総人口推移を県別にグラフ化したものです。</p>
+            </div>
+            <div id="trends">
+                {{datalists[0].data}}
+            </div>
         </div>
+        <script src="index.js"></script>
     </main>
 </body>
 </html>
