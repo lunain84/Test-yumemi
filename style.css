@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP');
 
 body{
-    min-width: 950px;
+    font-family: 'Noto Sans JP', sans-serif;
+    min-width: 1350px;
     margin: 0px;
 }
 header{
@@ -11,7 +12,6 @@ header{
     
 }
 #header-tittle{
-    font-family: 'Noto Sans JP', sans-serif;
     padding-top: 10px;
     font-size: 50px;
     text-align: center;
@@ -28,16 +28,26 @@ header{
     border-radius: 20px;
 }
 
-main{
+#checkBoxes{
     font-family: 'Noto Sans JP', sans-serif;
-    margin: 30px;
+    margin: 5vw;
+    text-align: center;
 }
-#elems{
+.elems{
     font-size: 20px;
-    padding-left: 20px;
-    display: inline-block;
+    padding: 10px;
+    display: flex;
 }
-
-#prefectures{
-    padding-bottom: 40px;
+.prefList{
+    padding: 40px;
+}
+#chart{
+    margin: 0;
+    padding-top: 50px;
+}
+.graph{
+    text-align: center;
+}
+svg{
+    text-align: center;
 }
