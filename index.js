@@ -12,7 +12,7 @@ const prefData = new Vue({
             .get("https://opendata.resas-portal.go.jp/api/v1/prefectures", {
                 headers: {
                     "Content-Type": "application/json",
-                    "X-API-KEY": "NNdLp1xdZ5PtMo0DwVYkZqUYHAHH7meoecAtqi6X"
+                    "X-API-KEY": "**************************************"
                 },
                 data: {},
             })
@@ -28,7 +28,7 @@ const prefData = new Vue({
                 .get("https://opendata.resas-portal.go.jp/api/v1/population/composition/perYear?prefCode=" + String(i), {
                     headers: {
                         "Content-Type": "application/json",
-                        "X-API-KEY": "NNdLp1xdZ5PtMo0DwVYkZqUYHAHH7meoecAtqi6X"
+                        "X-API-KEY": "**************************************"
                     },
                     data: {},
                 })
